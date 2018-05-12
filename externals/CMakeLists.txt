@@ -1,0 +1,11 @@
+if (TARGET catch)
+	message("Skipping target `catch` as it is included by a parent.")
+else()
+	add_subdirectory("catch")
+endif()
+
+if (TARGET face_library)
+	message("Skipping target `face_library` as it is included by a parent.")
+else()
+	add_subdirectory(face_library)
+endif()
